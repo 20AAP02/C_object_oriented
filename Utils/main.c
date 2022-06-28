@@ -7,7 +7,7 @@ int main()
 {
     // test ex : (str = strin().cpy("blabla"))
     char    **arr = array().create(2, "hello", "bla bla");
-    char    **arr2 = array().cpy(NULL);
+    char    **arr2 = array().cpy_n(arr, 2);
     int i = 0;
     while (arr && arr[i])
         printf("%s\n", arr[i++]);
