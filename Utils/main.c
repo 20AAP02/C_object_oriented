@@ -7,16 +7,15 @@ int main()
 {
     // test ex : (str = strin().cpy("blabla"))
     char    **arr = array().create(2, "hello", "bla bla");
+    char    **arr2 = array().cpy(NULL);
     int i = 0;
-    while (arr[i])
+    while (arr && arr[i])
         printf("%s\n", arr[i++]);
     arr = array().free(arr);
-    arr = array().add(arr, "hello");
-    arr = array().add(arr, "world");
     i = 0;
-    while (arr[i])
-        printf("%s\n", arr[i++]);
-    arr = array().free(arr);
+    while (arr2 && arr2[i])
+        printf("%s\n", arr2[i++]);
+    arr2 = array().free(arr2);
 
     return (0);
 }

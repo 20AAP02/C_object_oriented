@@ -1,28 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_array.h                                         :+:      :+:    :+:   */
+/*   ft_util1.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: amaria-m <amaria-m@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/27 19:16:58 by amaria-m          #+#    #+#             */
-/*   Updated: 2022/06/28 19:06:14 by amaria-m         ###   ########.fr       */
+/*   Created: 2022/06/28 19:06:44 by amaria-m          #+#    #+#             */
+/*   Updated: 2022/06/28 19:13:10 by amaria-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include <stdarg.h>
+#include <ft_arr_util.h>
+#include <ft_string.h>
 
-typedef struct ft_array
+char    **ft_copy_arr(char **arr)
 {
-    int     (*len)(char **arr);
-    char    **(*free)(char **arr);
-    char    **(*create)(int len, ...);
-    char    **(*add)(char **arr, char *str);
-    char    **(*rmv)(char **arr, int index);
-    char    **(*cpy)(char **arr);
-    char    **(*iter)(char **arr, char *(*f)(char *str));
-}   t_array;
+    char    **arr_c;
+    int     i;
 
-t_array array(void);
-
-
+    if (!arr || !*arr)
+        return (NULL);
+    arr_c = malloc(sizeof(char *) * (ft_arrlen(arr) + 1));
+    i = 0;
+    while (arr && arr[i])
+    {
+        arr_c[i] = string().cpy(arr[i]);
+        i++;
+    }
+    arr_c[i] = NULL;
+    return (arr_c);
+}

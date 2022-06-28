@@ -6,7 +6,7 @@
 /*   By: amaria-m <amaria-m@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/27 20:38:55 by amaria-m          #+#    #+#             */
-/*   Updated: 2022/06/27 21:33:20 by amaria-m         ###   ########.fr       */
+/*   Updated: 2022/06/28 19:10:52 by amaria-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,5 +21,7 @@ int     ft_arrlen(char **arr);
 char    **ft_free_arr(char **arr);
 char    **ft_create_arr(int len, ...);
 char    **ft_add_arr(char **arr, char *str);
+char    **ft_rmv_arr(char **arr, int index);
+char    **ft_copy_arr(char **arr);
 
 #endif

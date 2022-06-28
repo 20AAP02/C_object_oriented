@@ -1,0 +1,461 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'SRC/array/ft_util0.o', needed by 'str_test'.  Stop.
+
+# GNU Make 4.2.1
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2016 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Tue Jun 28 18:27:11 2022
+
+# Variables
+
+# 'override' directive
+GNUMAKEFLAGS := 
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# environment
+RUBY_VERSION = ruby-3.0.2
+# environment
+DESKTOP_SESSION = zorin
+# default
+.SHELLFLAGS := -c
+# automatic
+?F = $(notdir $?)
+# environment
+XDG_SESSION_CLASS = user
+# environment
+XDG_SESSION_TYPE = x11
+# environment
+VSCODE_LOG_NATIVE = false
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+IM_CONFIG_PHASE = 1
+# environment
+rvm_path = /usr/share/rvm
+# makefile (from 'Makefile', line 18)
+INCLUDES = ./HDR
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+XAUTHORITY = /run/user/1000/gdm/Xauthority
+# environment
+GDMSESSION = zorin
+# environment
+XMODIFIERS = @im=ibus
+# makefile
+CURDIR := /home/antonio/Desktop/C_object_oriented/Utils
+# makefile
+SHELL = /bin/sh
+# makefile (from 'Makefile', line 15)
+RM = /bin/rm -f
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
+_ = /usr/share/code/code
+# makefile (from 'Makefile', line 14)
+CFLAGS = -Wall -Wextra -Werror
+# environment
+JOURNAL_STREAM = 8:56848
+# environment
+XDG_CONFIG_DIRS = /etc/xdg/xdg-zorin:/etc/xdg
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# automatic
+@F = $(notdir $@)
+# makefile (from 'Makefile', line 20)
+SRCS = main.c $(shell find SRC/ -name '*.c')
+# environment
+GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
+# environment
+USERNAME = antonio
+# environment
+MAKELEVEL := 0
+# environment
+MANDATORY_PATH = /usr/share/gconf/zorin.mandatory.path
+# environment
+XDG_DATA_DIRS = /usr/share/zorin:/home/antonio/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+LC_CTYPE = pt_PT.UTF-8
+# makefile (from 'Makefile', line 21)
+OBJS = $(SRCS:.c=.o)
+# environment
+INFOPATH = /home/linuxbrew/.linuxbrew/share/info:/home/linuxbrew/.linuxbrew/share/info:
+# environment
+MANAGERPID = 2774
+# environment
+LESSOPEN = | /usr/bin/lesspipe %s
+# environment
+LC_NAME = pt_PT.UTF-8
+# environment
+VSCODE_CWD = /home/antonio
+# environment
+QT_STYLE_OVERRIDE = adwaita
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# environment
+PATH = /home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/home/antonio/.local/bin:/home/antonio/local/bin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/home/antonio/.local/bin:/usr/share/rvm/gems/ruby-3.0.2/bin:/usr/share/rvm/gems/ruby-3.0.2@global/bin:/usr/share/rvm/rubies/ruby-3.0.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/share/rvm/bin:/usr/share/rvm/rubies/ruby-3.0.2/bin
+# environment
+GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
+# environment
+GJS_DEBUG_OUTPUT = stderr
+# environment
+SESSION_MANAGER = local/antonio-NBLK-WAX9X:@/tmp/.ICE-unix/3132,unix/antonio-NBLK-WAX9X:/tmp/.ICE-unix/3132
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# environment
+XDG_MENU_PREFIX = gnome-
+# environment
+VSCODE_LOG_STACK = false
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+INVOCATION_ID = 826e5abf67a24c8eac800ce9b3636b61
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
+# environment
+LS_COLORS = 
+# environment
+XDG_SESSION_DESKTOP = zorin
+# environment
+SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
+# environment
+GIO_LAUNCHED_DESKTOP_FILE_PID = 9933
+# automatic
+%F = $(notdir $%)
+# environment
+DISPLAY = :0
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+rvm_bin_path = /usr/share/rvm/bin
+# environment
+PWD = /home/antonio/Desktop/C_object_oriented/Utils
+# environment
+QT_QPA_PLATFORMTHEME = gtk3
+# default
+.LOADED := 
+# environment
+GEM_HOME = /usr/share/rvm/gems/ruby-3.0.2
+# environment
+SSH_AGENT_PID = 3074
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = zorin:GNOME
+# environment
+GTK_MODULES = gail:atk-bridge
+# environment
+MANPATH = /home/linuxbrew/.linuxbrew/share/man:/home/linuxbrew/.linuxbrew/share/man::
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/antonio
+# environment
+HOMEBREW_CELLAR = /home/linuxbrew/.linuxbrew/Cellar
+# environment
+VSCODE_CODE_CACHE_PATH = /home/antonio/.config/Code/CachedData/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5
+# environment
+LOGNAME = antonio
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# automatic
++F = $(notdir $+)
+# environment
+LESSCLOSE = /usr/bin/lesspipe %s %s
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# environment
+GNOME_DESKTOP_SESSION_ID = this-is-deprecated
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+LC_TIME = pt_PT.UTF-8
+# environment
+GEM_PATH = /usr/share/rvm/gems/ruby-3.0.2:/usr/share/rvm/gems/ruby-3.0.2@global
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+rvmsudo_secure_path = 1
+# environment
+QT_IM_MODULE = ibus
+# environment
+IRBRC = /usr/share/rvm/rubies/ruby-3.0.2/.irbrc
+# environment
+SHLVL = 0
+# makefile (from 'Makefile', line 13)
+CC = gcc -g
+# environment
+GNOME_SHELL_SESSION_MODE = zorin
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-1c382297-c6d4-4cb9-ae7c-928433c24986.sock
+# default
+MAKE_VERSION := 4.2.1
+# environment
+USER = antonio
+# environment
+LC_MONETARY = pt_PT.UTF-8
+# makefile
+.DEFAULT_GOAL := all
+# environment
+XDG_CURRENT_DESKTOP = zorin:GNOME
+# default
+MAKECMDGOALS := all
+# environment
+LIBVIRT_DEFAULT_URI = qemu:///system
+# environment
+rvm_version = 1.29.12 (manual)
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+LC_TELEPHONE = pt_PT.UTF-8
+# default
+MAKE_COMMAND := make
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# environment
+VSCODE_IPC_HOOK = /run/user/1000/vscode-d51236d4-1.67.2-main.sock
+# makefile
+MAKEFLAGS = pqrR
+# environment
+MFLAGS = -pqrR
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+HOMEBREW_PREFIX = /home/linuxbrew/.linuxbrew
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+GDK_BACKEND = x11
+# environment
+LC_PAPER = pt_PT.UTF-8
+# environment
+HOMEBREW_REPOSITORY = /home/linuxbrew/.linuxbrew/Homebrew
+# environment
+QT_ACCESSIBILITY = 1
+# environment
+DEFAULTS_PATH = /usr/share/gconf/zorin.default.path
+# 'override' directive
+.SHELLSTATUS := 0
+# default
+MAKEFILES := 
+# environment
+LC_NUMERIC = pt_PT.UTF-8
+# automatic
+<F = $(notdir $<)
+# environment
+LC_MEASUREMENT = pt_PT.UTF-8
+# environment
+LC_ALL = C
+# environment
+GJS_DEBUG_TOPICS = JS ERROR;JS LOG
+# automatic
+^F = $(notdir $^)
+# environment
+rvm_prefix = /usr/share
+# default
+SUFFIXES := 
+# environment
+CHROME_DESKTOP = code-url-handler.desktop
+# environment
+WINDOWPATH = 2
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# environment
+LC_IDENTIFICATION = pt_PT.UTF-8
+# makefile (from 'Makefile', line 16)
+NAME = str_test
+# default
+.RECIPEPREFIX := 
+# environment
+LC_ADDRESS = pt_PT.UTF-8
+# environment
+LANG = C
+# environment
+VSCODE_PID = 9933
+# environment
+MY_RUBY_HOME = /usr/share/rvm/rubies/ruby-3.0.2
+# variable set hash-table stats:
+# Load=135/1024=13%, Rehash=0, Collisions=36/167=22%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+ 
+
+# . (device 66312, inode 4850004): 8 files, no impossibilities.
+
+# 8 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+str_test: main.o SRC/string/ft_util1.o SRC/string/ft_util2.o SRC/string/ft_string.o SRC/string/ft_util0.o SRC/array/ft_array.o SRC/array/ft_util0.o
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 29):
+	@echo "\033[0;32mOBJECT FILES COMPILED\033[0m"
+	@$(CC) $(CFLAGS) -I$(INCLUDES) $(OBJS) -o $(NAME)
+	@echo "\033[0;32mEXECUTABLE IS READY TO USE\033[0m"
+
+e:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 47):
+	@make re && make clean && clear && ./$(NAME)
+
+all: str_test
+#  Phony target (prerequisite of .PHONY).
+#  Command line target.
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+m:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+v:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 50):
+	@make re && make clean && clear && valgrind ./$(NAME)
+
+.PHONY: all re clean fclean m
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+SRC/array/ft_util0.o:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+
+# Not a target:
+SRC/string/ft_util2.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-28 18:26:46.482249168
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-28 18:26:46.482249168
+#  File has been updated.
+#  Successfully updated.
+
+.c.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 24):
+	@$(CC) $(CFLAGS) -I$(INCLUDES) -c $< -o $(<:.c=.o)
+
+fclean: clean
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 38):
+	@$(RM) $(NAME)
+	@echo "\033[0;31mREMOVED EXECUTABLE\033[0m"
+
+norm:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 44):
+	@norminette -R CheckForbiddenSourceHeader $(SRCS)
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+re: fclean all
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 34):
+	@$(RM) $(OBJS)
+	@echo "\033[0;31mREMOVED OBJECT FILES\033[0m"
+
+# Not a target:
+SRC/string/ft_string.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-28 18:26:46.482249168
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+main.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-28 18:26:46.482249168
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+SRC/string/ft_util0.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-28 18:26:46.482249168
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+SRC/array/ft_array.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-28 18:26:46.482249168
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+SRC/string/ft_util1.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-28 18:26:46.482249168
+#  File has been updated.
+#  Successfully updated.
+
+# files hash-table stats:
+# Load=21/1024=2%, Rehash=0, Collisions=0/49=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 29 / storage = 278 B / avg = 9 B
+# current buf: size = 8162 B / used = 278 B / count = 29 / avg = 9 B
+
+# strcache performance: lookups = 53 / hit rate = 45%
+# hash-table stats:
+# Load=29/8192=0%, Rehash=0, Collisions=1/53=2%
+# Finished Make data base on Tue Jun 28 18:27:11 2022
+
+ 

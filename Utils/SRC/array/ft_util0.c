@@ -6,7 +6,7 @@
 /*   By: amaria-m <amaria-m@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/27 20:38:25 by amaria-m          #+#    #+#             */
-/*   Updated: 2022/06/27 21:34:13 by amaria-m         ###   ########.fr       */
+/*   Updated: 2022/06/28 19:05:27 by amaria-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,10 +76,36 @@ char    **ft_add_arr(char **arr, char *str)
         arr_c = malloc(sizeof(char*) * (ft_arrlen(arr) + 2));
     i = 0;
     while (arr && arr[i])
-        arr_c[i] = arr[i++];
+    {
+        arr_c[i] = arr[i];
+        i++;
+    }
     arr_c[i++] = string().cpy(str);
     arr_c[i] = NULL;
     if (arr)
         free(arr);
+    return (arr_c);
+}
+
+char    **ft_rmv_arr(char **arr, int index)
+{
+    int     i;
+    int     j;
+    char    **arr_c;
+
+    if (!arr || !*arr || index < 0)
+        return (arr);
+    if (ft_arrlen(arr) <= 1 && index == 0)
+        return(ft_free_arr(arr));
+    if (ft_arrlen(arr) <= index)
+        return (arr);
+    arr_c = malloc(sizeof(char *) * ft_arrlen(arr));
+    i = -1;
+    j = 0;
+    while (arr && arr[++i])
+        if (i != index)
+            arr_c[j++] = string().cpy(arr[i]);
+    arr_c[j] = NULL;
+    ft_free_arr(arr);
     return (arr_c);
 }
