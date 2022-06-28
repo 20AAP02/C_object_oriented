@@ -6,7 +6,7 @@
 /*   By: amaria-m <amaria-m@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/28 19:06:44 by amaria-m          #+#    #+#             */
-/*   Updated: 2022/06/28 19:30:22 by amaria-m         ###   ########.fr       */
+/*   Updated: 2022/06/28 20:20:58 by amaria-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,32 @@ char    **ft_copy_n_arr(char **arr, int len)
     return (arr_c);
 }
 
-char    **ft_arr_iter(char **arr, char *(*f)(char *str))
+char    **ft_arr_iter(char **arr, char *(*f)(const char *str))
 {
-    return (NULL);
+    int     i;
+    char    *mem;
+
+    if (!arr || !*arr || !f)
+        return (arr);
+    i = 0;
+    while (arr && arr[i])
+    {
+        mem = arr[i];
+        arr[i] = f(arr[i]);
+        if (arr[i] != mem)
+            free(mem);
+        i++;
+    }
+    return (arr);
+}
+
+char    **ft_arr_set(char **arr, char *str, int index)
+{
+    if (!arr || !*arr || !str || !*str)
+        return (arr);
+    if (index < 0 || ft_arrlen(arr) <= index)
+        return (arr);
+    free(arr[index]);
+    arr[index] = str;
+    return (arr);
 }

@@ -6,7 +6,7 @@
 /*   By: amaria-m <amaria-m@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/26 16:32:06 by amaria-m          #+#    #+#             */
-/*   Updated: 2022/06/27 20:45:43 by amaria-m         ###   ########.fr       */
+/*   Updated: 2022/06/28 20:06:25 by amaria-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,5 +30,6 @@ char    **ft_split(const char *str, char *div);
 int	    ft_atoi(const char *str);
 char	*ft_trim(const char *str);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
+char    *ft_iter(const char *str, char (*f)(char c));
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: amaria-m <amaria-m@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/26 16:32:15 by amaria-m          #+#    #+#             */
-/*   Updated: 2022/06/27 20:46:46 by amaria-m         ###   ########.fr       */
+/*   Updated: 2022/06/28 20:06:21 by amaria-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ typedef struct s_string
     int		(*atoi)(const char *str);
     char    *(*trim)(const char *str);
     char	*(*substr)(char const *s, unsigned int start, size_t len);
+    char    *(*iter)(const char *str, char (*f)(char c));
 }	t_string;
 
 t_string	string(void);
