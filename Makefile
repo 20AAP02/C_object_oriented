@@ -6,7 +6,7 @@
 #    By: amaria-m <amaria-m@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/06/26 17:09:05 by amaria-m          #+#    #+#              #
-#    Updated: 2022/06/29 11:47:08 by amaria-m         ###   ########.fr        #
+#    Updated: 2022/06/29 11:59:48 by amaria-m         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -49,4 +49,4 @@ e:
 v:
 	@make re && make clean && clear && valgrind ./$(NAME)
 
-.PHONY: all re clean fclean m
+.PHONY: all re clean fclean norm e v
