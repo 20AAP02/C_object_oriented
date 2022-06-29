@@ -6,7 +6,7 @@
 #    By: amaria-m <amaria-m@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/06/26 17:09:05 by amaria-m          #+#    #+#              #
-#    Updated: 2022/06/27 19:30:24 by amaria-m         ###   ########.fr        #
+#    Updated: 2022/06/29 11:47:08 by amaria-m         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,7 @@ NAME		= 	str_test
 
 INCLUDES	= 	./HDR
 
-SRCS		= 	main.c $(shell find SRC/ -name '*.c')
+SRCS		= 	$(shell find SRC/ -name '*.c')
 OBJS		= 	$(SRCS:.c=.o)
 
 .c.o:
