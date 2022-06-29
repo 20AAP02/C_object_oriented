@@ -9,9 +9,11 @@ int main()
     char *str;
     t_list *lst;
     
-    lst = list().new(string().cpy("  Antonio  "));
-    list().add(lst, string().cpy("Pinto "));
-    list().iter(lst, string().trim, 1);
+    lst = list().new(string().cpy("Antonio"));
+    list().add(lst, string().cpy("Pinto"));
+    list().add(lst, string().cpy("Pinto"));
+    list().set(lst, string().cpy("Abranches"), 1);
+    lst = list().rmv(lst, 0);
     int i = 0;
     while (list().get(lst, i))
     {
