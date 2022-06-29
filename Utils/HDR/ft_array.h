@@ -6,9 +6,12 @@
 /*   By: amaria-m <amaria-m@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/27 19:16:58 by amaria-m          #+#    #+#             */
-/*   Updated: 2022/06/28 20:21:03 by amaria-m         ###   ########.fr       */
+/*   Updated: 2022/06/28 22:15:14 by amaria-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#ifndef FT_ARRAY_H
+# define FT_ARRAY_H
 
 # include <stdarg.h>
 
@@ -27,4 +30,4 @@ typedef struct ft_array
 
 t_array array(void);
 
-
+#endif

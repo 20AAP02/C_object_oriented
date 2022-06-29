@@ -1,30 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_arr_util.h                                      :+:      :+:    :+:   */
+/*   ft_lst_util.h                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: amaria-m <amaria-m@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/27 20:38:55 by amaria-m          #+#    #+#             */
-/*   Updated: 2022/06/28 22:17:03 by amaria-m         ###   ########.fr       */
+/*   Created: 2022/06/28 22:16:39 by amaria-m          #+#    #+#             */
+/*   Updated: 2022/06/29 01:42:23 by amaria-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_ARRAY_UTIL_H
-# define FT_ARRAY_UTIL_H
+#ifndef FT_ARRAY_H
+# define FT_LIST__H
 
 # include <stdarg.h>
 # include <stdlib.h>
 # include <stdio.h>
+# include <ft_list.h>
 
-int     ft_arrlen(char **arr);
-char    **ft_free_arr(char **arr);
-char    **ft_create_arr(int len, ...);
-char    **ft_add_arr(char **arr, char *str);
-char    **ft_rmv_arr(char **arr, int index);
-char    **ft_copy_arr(char **arr);
-char    **ft_copy_n_arr(char **arr, int len);
-char    **ft_arr_iter(char **arr, char *(*f)(const char *str));
-char    **ft_arr_set(char **arr, char *str, int index);
+int     ft_lst_len(t_list *lst);
+void    *ft_lst_get(t_list *lst, int index);
+t_list  *ft_new_lst(void *content);
+t_list  *ft_lst_add(t_list *lst, void *content);
+t_list  *ft_lst_free(t_list *lst);
+t_list  *ft_lst_iter(t_list *lst, void *ptr, int check);
 
 #endif

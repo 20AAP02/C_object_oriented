@@ -1,17 +1,24 @@
 #include <ft_string.h>
 #include <ft_array.h>
+#include <ft_list.h>
 
 #include <stdio.h> // printf
 
 int main()
 {
-    // test ex : (str = strin().cpy("blabla"))
-    char    **arr = array().create(2, "    hello ", " bla bla    ");
-    array().set(arr, string().cpy("antonio"), 1);
+    char *str;
+    t_list *lst;
+    
+    lst = list().new(string().cpy("  Antonio  "));
+    list().add(lst, string().cpy("Pinto "));
+    list().iter(lst, string().trim, 1);
     int i = 0;
-    while (arr && arr[i])
-        printf("%s\n", arr[i++]);
-    arr = array().free(arr);
-
+    while (list().get(lst, i))
+    {
+        str = list().get(lst, i);
+        printf("%s\n", str);
+        i++;
+    }
+    list().free(lst);
     return (0);
 }

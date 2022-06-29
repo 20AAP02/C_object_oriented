@@ -6,12 +6,12 @@
 /*   By: amaria-m <amaria-m@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/26 16:32:06 by amaria-m          #+#    #+#             */
-/*   Updated: 2022/06/28 20:06:25 by amaria-m         ###   ########.fr       */
+/*   Updated: 2022/06/28 22:17:16 by amaria-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef STRING_UTIL_H
-# define STRING_UTIL_H
+#ifndef FT_STRING_UTIL_H
+# define FT_STRING_UTIL_H
 
 # include <stdlib.h>
 # include <stdio.h>
