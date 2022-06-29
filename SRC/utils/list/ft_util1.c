@@ -6,7 +6,7 @@
 /*   By: amaria-m <amaria-m@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/29 00:54:51 by amaria-m          #+#    #+#             */
-/*   Updated: 2022/06/29 11:41:35 by amaria-m         ###   ########.fr       */
+/*   Updated: 2022/06/29 15:52:53 by amaria-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,4 +72,28 @@ t_list  *ft_lst_rmv(t_list *lst, int index)
     }
     lst->next = ft_lst_rmv(lst->next, --index);
     return (lst);    
+}
+
+t_list  *ft_lst_swap(t_list *lst, int i, int j)
+{
+    void    *mem;
+    t_list  *temp;
+    int     index;
+
+    if (ft_lst_len(lst) < 2 || i >= ft_lst_len(lst))
+        return (lst);
+    if (j >= ft_lst_len(lst) || i == j || i < 0 || j < 0)
+        return (lst);
+    mem = ft_lst_get(lst, i);
+    temp = lst;
+    index = -1;
+    while (++index < i)
+        temp = temp->next;
+    temp->content = ft_lst_get(lst, j);
+    temp = lst;
+    index = -1;
+    while (++index < j)
+        temp = temp->next;
+    temp->content = mem;
+    return (lst);
 }

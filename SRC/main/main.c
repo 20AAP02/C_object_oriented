@@ -8,12 +8,11 @@ int main()
 {
     char *str;
     t_list *lst;
-    
+
     lst = list().new(string().cpy("Antonio"));
     list().add(lst, string().cpy("Pinto"));
     list().add(lst, string().cpy("Pinto"));
-    list().set(lst, string().cpy("Abranches"), 1);
-    lst = list().rmv(lst, 0);
+    lst = list().swp(lst, 0, 1);
     int i = 0;
     while (list().get(lst, i))
     {

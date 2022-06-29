@@ -6,7 +6,7 @@
 /*   By: amaria-m <amaria-m@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/28 22:15:31 by amaria-m          #+#    #+#             */
-/*   Updated: 2022/06/29 10:52:09 by amaria-m         ###   ########.fr       */
+/*   Updated: 2022/06/29 15:41:24 by amaria-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ typedef struct ft_list_utils
     t_list  *(*iter)(t_list *lst, void *ptr, int check);
     t_list  *(*set)(t_list *lst, void *content, int index);
     t_list  *(*rmv)(t_list *lst, int index);
+    t_list  *(*swp)(t_list *lst, int i, int j);
 }           t_list_utils;
 
 t_list_utils    list(void);
