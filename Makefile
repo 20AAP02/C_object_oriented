@@ -5,19 +5,19 @@
 #                                                     +:+ +:+         +:+      #
 #    By: amaria-m <amaria-m@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2022/06/26 17:09:05 by amaria-m          #+#    #+#              #
-#    Updated: 2022/06/29 11:59:48 by amaria-m         ###   ########.fr        #
+#    Created: 2022/06/30 19:55:47 by amaria-m          #+#    #+#              #
+#    Updated: 2022/06/30 20:40:52 by amaria-m         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CC			= 	gcc -g
 CFLAGS		= 	-Wall -Wextra -Werror
 RM			= 	/bin/rm -f
-NAME		= 	str_test
+NAME		= 	name
 
-INCLUDES	= 	./HDR
+INCLUDES	= 	./hdr
 
-SRCS		= 	$(shell find SRC/ -name '*.c')
+SRCS		= 	$(shell find src/ -name '*.c')
 OBJS		= 	$(SRCS:.c=.o)
 
 .c.o:
